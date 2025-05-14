@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>동현이엉덩이</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #1e1e1e;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.map-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-card:hover {
+  transform: scale(1.05);
+}
+.map-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.map-card-name {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: transparent;
+  text-shadow: 0px 0px 4px #000;
+}
+</style>
+</head>
+<body>
+<header>동현이엉덩이</header>
+<div class="map-grid">
+  <div class="map-card" onclick="location.href='ascent.html'"><img src="https://i.namu.wiki/i/LeH06n-hXZ4US-3ZZv8T-c_Uykrzsl0yXYaEHP-vfLzmGdsj9DuAg1xDp6j2fMOjzlfM7vy7Q_YiIgE5DL2VaA.webp"><div class="map-card-name">어센트</div></div>
+  <div class="map-card" onclick="location.href='haven.html'"><img src="https://i.namu.wiki/i/WxS79EkoYnVPhN3-qzSCtGh1ZQUWyRP1tVIbn5NhxUxECpXKNv2eaouuIN4FEj7j3d2F-pq6bViWCBllZDOXM3uCmZ8xzE1LxTdHWF_kB1d9-vnt-Ne_Ja2mgY96AZiAIjMhOmsHOzbc_9V8vh5LOg.webp"><div class="map-card-name">헤이븐</div></div>
+  <div class="map-card" onclick="location.href='icebox.html'"><img src="https://i.namu.wiki/i/peG6xUXfvFn1BWUDgMXsU_7iL6e7bvVPuxvvPKAc4GSA_wI4sII4K_lsi7Ys_-Gv3rvHCcAPJ3b42Pop3pq5ag.webp"><div class="map-card-name">아이스박스</div></div>
+  <div class="map-card" onclick="location.href='bind.html'"><img src="https://i.namu.wiki/i/CK68nHeUPvlAOixuO10-vMc6jKfaH04bLAL_psL1P6ZlHUknYbzzRZ7VjkGZi3iXUSSHqekp758OdMH-sFyVtE8DlExtHoerm7Xiyk2iHN51sg3Tw4Qz1XH4SPgEaojmemI3uaRA-sFsyUfkwFeIWw.webp"><div class="map-card-name">바인드</div></div>
+  <div class="map-card" onclick="location.href='split.html'"><img src="https://i.namu.wiki/i/AJbHtxl-AV53Qcec6gJrzDnUiauAUdkI5JpsckbtdchklF9l3CfxIHUd069iQcIVKsAWFTtdg0jhb25nQcY_P36IchqHDmMcKCh9bJsqqkdkvyfUb64Wi_AlbOZ4osAq5FQzVRLB3LK1tM_jekPxwg.webp"><div class="map-card-name">스플릿</div></div>
+  <div class="map-card" onclick="location.href='sunset.html'"><img src="https://i.namu.wiki/i/h0CXSXluKJg7xbcPgPaKcOVB8spXLXh2abHv1IORc653pNT7Jk17mRA0WgT3qcUVlr1iyuMdOwTORUHntTlfR-XkJhPdNzfpWgOguaVipSGe9z-53hdCAqchHg3eIPyhn9Cbe1AwABtrvGRfrnSHTg.webp"><div class="map-card-name">선셋</div></div>
+  <div class="map-card" onclick="location.href='breeze.html'"><img src="https://i.namu.wiki/i/t2DZHRHrS1dJBDzJk65JGP7BAUGpoY4lMCRgfrJfO4Oeg7TOw3EsvPl3QoAjjOI8EsSFwi9kgmzleKNKSyL9ZeNng2OCA811JDVbzXdrpQYGlzzlCZIHN7R9ndYO6yqwVSmw6I9Db8UiXBH_qCbZTQ.webp"><div class="map-card-name">브리즈</div></div>
+  <div class="map-card" onclick="location.href='fracture.html'"><img src="https://i.namu.wiki/i/VDAOToHaPiHq0n-14hmTkU2ulpYpgnmzZMhQ24U90I73WshCdWPyFKx8r19bxJ70VsDai7n8K01pvoKwVyOyTsw6FZpyVeszljJ-lE7awhkexPTF_Cu4ojwVd2-hDRUvlgnTDcnnIGEKsGRYO8GepA.webp"><div class="map-card-name">프랙처</div></div>
+  <div class="map-card" onclick="location.href='lotus.html'"><img src="https://i.namu.wiki/i/WQja2Z0RaM9f9T8Px_RtORFiftFfswS9ETfbLsS0x_CKEm2OrLyIkpXq8AyFv2pCETn59LoKaMbFKD5D97hSECCFwIJoLx1KtPYSSnAGiXH-DI60JgN5027o3da05u1TBTWFomcjiY4U4hF3Lp1Lbg.webp"><div class="map-card-name">로터스</div></div>
+  <div class="map-card" onclick="location.href='pearl.html'"><img src="https://i.namu.wiki/i/6o5bQ9F-DR5_6VLAg6auf1pIGJun--s3HgfwRlEkeWJ1KXenQfC3khQhh_BH-nmzYzUyRvO6LH1Jgcg2UCGD1ec4fidZw2kNm1v0p_7Sbg3u8sHX5pgBrEz03NMrwj5j52HZUUaJ6LRWo8CRG7S9Iw.webp"><div class="map-card-name">펄</div></div>
+  <div class="map-card" onclick="location.href='abyss.html'"><img src="https://i.namu.wiki/i/ORUAXxOondyKAnrk3IOUpCbW47r12x_Ps2g8uh5-IypuONVE2WSkhJPWZJDyHhEZPwXkJm6HweCOFHVDY-B7Q2Cp70VzijUEKNUVEbug-RjqaW4RFZ0iT39p5cQTBMn6A-su2Gm0Pr9cIUx6NtGvhA.webp"><div class="map-card-name">어비스</div></div>
+</div>
+</body>
+</html>

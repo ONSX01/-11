@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>어비스</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Nunito Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      background-color: #1e1e1e;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+      margin: 1rem;
+    }
+
+    .section h2 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid #00bcd4;
+      padding-left: 0.5rem;
+      text-align: left;
+    }
+
+    .agent-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: flex-start;
+    }
+
+    .agent-card {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      background-color: #1e1e1e;
+    }
+
+    .agent-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .agent-card:hover img {
+      transform: scale(1.3);
+    }
+
+    .agent-name {
+      position: absolute;
+      bottom: 0.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-size: 0.5rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .agent-card:hover .agent-name {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>어비스</header>
+
+<div class="section">
+  <h2>타격대</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/-cNp49WjsFdxD-nZIHlWQoKCozonfo5Z8IuUnCgnR5DyACcj5ztnd74ZQimSDZJ3c4uRvkDEVYC9eE_IYvtW9BKpW8G9Bh0IYJTS65fPAFZGXBz82_XajirhjMZBgh1W5UTN5IPXk1GDCn2ZK2JM0w.webp" alt="제트">
+      <div class="agent-name">제트</div>
+    </div>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/MnKk0--_iqd3q5fGoCli7waJxWrFodiqlyth2ezDbz8EvharLKA_kDooH5w4_0cZupQ2-JiFEOCDSmpOHkUVBKJ-kYHAmffRPuxy9peNgoZB9nds3gTbULA6A_q4V0lcCB2hBQllO_snLsLuicYQJQ.webp" alt="아이소">
+      <div class="agent-name">아이소</div>
+    </div>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/KCBugYRlPw8VLc_sY2WLjuAmtfKlXhJVtTCfaUxyQCGQs__wBbqmja_S7MywFS-u72Jp-AMURNBbKID5bxPEEFCrTPxy0F386gLi5IPZpJ6JmuIMlBy_6au1rCWFSrXKS9kSig2Curhdbsw83s5_Ng.webp" alt="레이나">
+      <div class="agent-name">레이나</div>
+    </div>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/z7SW2hdgEMg_3pkSFn8lpSaA12OP0MRavCIpk0JKqoLnieVfugNELVdKFi7aCQlUhx40pw1fzq9Jz_YxlZ4jylm08FBdk_1oW2pK9tisYqCcNLWbasTGSWA4b-sFE4mKd1ASgsgjyiuKczAojBV36g.webp" alt="네온">
+      <div class="agent-name">네온</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>척후대</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/ow-SfS2mzBF_qKWWRf3M2_R0YCDzfcyUmuuVzxubc9M1sGLidZvgCJ6yaNR0vkf7vVD13WIbM-AwLTYnN7zYOETyeq2X5cGUmfeu0YpU2N12Rc3OQoEGgAE8lsdnhC6pzcDf-T_qDBOVnNgg2uU-Ww.webp" alt="소바">
+      <div class="agent-name">소바</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>전략가</h2>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/g2CpDYCT3s4NhLUcyLralF65jc9ZfkguoxZo7o-N8t4CnhBmaptgOpRYhXgql97w-nvV02VtFbP5v_b4bdz9sUfwoXlyb7KpZA10nMo2wkPmf9pR36b_LsEKEMUTa2L0LrOj_5V0w8ERqe8fPMOlFA.webp" alt="클로브">
+      <div class="agent-name">클로브</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>감시자</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/GyaJpsinc3MC_dxYH1l7pI53FlUhCJcaR2nYOg_IkYUULB_fjXwo5ZBE8qi2WHZ9yhzBKxd67r2toLjt2kRS-ecUM8cpKrXhAZkrmF6XK8JLDw-s__EeGR_Xcwfo_CPQANTnopAa_shkdS7VeBrdBQ.webp" alt="사이퍼">
+      <div class="agent-name">사이퍼</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

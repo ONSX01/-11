@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아이스박스</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Nunito Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      background-color: #1e1e1e;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+      margin: 1rem;
+    }
+
+    .section h2 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid #00bcd4;
+      padding-left: 0.5rem;
+      text-align: left;
+    }
+
+    .agent-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: flex-start;
+    }
+
+    .agent-card {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      overflow: hidden;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      background-color: #1e1e1e;
+    }
+
+    .agent-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .agent-card:hover img {
+      transform: scale(1.3);
+    }
+
+    .agent-name {
+      position: absolute;
+      bottom: 0.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-size: 0.5rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .agent-card:hover .agent-name {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>아이스박스</header>
+
+<div class="section">
+  <h2>타격대</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/6FlLSUHI9s9mFISLzpelsAOHkd6NXU2360wEWHuvIwSsCZlzCBmcUuA9C3C3hezUsuwfwgRY_8K5kSFUp1etnXwfabTONaxsuKD5aP01-7SaF6xtoZPKJYfHARiGSYXHFXo_jCsUzn-lUwiIwDZEEA.webp">
+      <div class="agent-name">제트</div>
+    </div>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/0v3xQo14p-wKDgx6sb7FyF4I51vJescAhV32c33LgWESlYY4sG_WxqEwNaZUFV9dUMmaI-QTC8dwZjjDkJQLxxg_vdIlMZkwNkTw7oXDo26TbIH9vbXMcsIZoCYEvWa8jQDK0nOG-p3g5mI7BJPFbQ.webp">
+      <div class="agent-name">요루</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>척후대</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/UpWykM9uZobRM1AzZzyPlS8IYq71-Ppvae7qAJzhSku2T2ILDSmcA5h9eFfYxmmaKODIq7XjXX4LLf7OP0DxOgtDCRByVO7jSfmYdyhVAsx8xrNifDMeasNz9e3ZxcdLZHn4eNqDJzSmShGr5n9lmA.webp">
+      <div class="agent-name">소바</div>
+    </div>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/S0hg-vKmszXzUYx6tq3gxRYyTiqqyx2wGBd9-v5eikWyxnzAbdI2l6-m9-GLl8X-4wQlO9YuHWHg9IBEfSxA0Q5v7K-Mn0mCwH8XN-abpEdi9ymMKoGtQbCnPd7KyNithohQobdTiKed1SN5JbtZLw.webp">
+      <div class="agent-name">테호</div>
+    </div>
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/vh1lG8rjK9LbbfeWl4sM3gqmduV18F0LdnvR8mh-0BiRzB6Y-b5Fu7NHGTeXlGVb6NsARenoHrMXgXVvhOyx4mXqAhaQMjXRJrriEh0u9p8EBIK3RHmeCmFnEeE0OCpqSLBBXstU6LRBZqFBqc7MkQ.webp">
+      <div class="agent-name">케이오</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>전략가</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/4Ioj6FvI8A9TpF5zK36Tdfvn2ZuNydO9UmzMD_fqoJXbu99VPiOxLjgG8U-s6xmAiND7WpPy_P3Y16bZuvpqau9nlvsQqvVUfQc3VIumlmcuvZQq4Ou_XQAI0rgWkCzEyBmORAP3FAqFGPj4ygghcA.webp">
+      
+      <div class="agent-name">바이퍼</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>감시자</h2>
+  <div class="agent-grid">
+    <div class="agent-card">
+      <img src="https://i.namu.wiki/i/Ym8U7PPGOpJCL5RmuHPeo02r4dIU-NCHnbMkjJc2yu97LRUsk4quI44tFFKlUX98TQzqfuOIOVTaCKl9NUTI_Yku7JpUMeMFmTeH52VBPvZpLcgGpicjEsR16UdBXTLf9-zKhZHiRFnnrcT0dlQypQ.webp">
+      <div class="agent-name">킬조이</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
